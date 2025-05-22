@@ -7,11 +7,12 @@
     <meta name="author" content="Generation Brasil" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Meu Perfil</title>
   </head>
   <body>
     <header>
-      <div id="header_content">
+      <div id="header_content" class="flex">
         <div id="titulo">
           <h1>Camila Lima</h1>
         </div>
@@ -20,10 +21,10 @@
           <nav>
             <ul id="menu">
               <li>
-                <a href="index.html"> Home </a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="contato.html"> Contato </a>
+                <a href="contato.html">Contato</a>
               </li>
             </ul>
           </nav>
@@ -32,7 +33,7 @@
     </header>
 
     <main>
-      <section id="contact">
+      <section id="contact" class="flex">
         <form action="#" method="submit" id="formulario">
           <label for="name">Nome: </label>
           <input
@@ -71,7 +72,7 @@
           <button type="submit">Enviar</button>
         </form>
 
-        <article id="mapa">
+        <article id="mapa" class="flex_start">
           <p>Av. Paulista, 100</p>
           <p>São Paulo - SP</p>
 
@@ -85,21 +86,29 @@
             aria-hidden="false"
             tabindex="0"
             id="mapa"
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()"
           ></iframe>
         </article>
       </section>
     </main>
 
-    <footer>
+    <footer class="flex">
+      <!-- Seção de Contato - Redes Sociais-->
       <section id="redes_sociais">
         <a href="https://www.linkedin.com/in/camilalimas/">
-          <img src="assets/img/linkedin.svg" alt="Linkedin" />
+          <img
+            src="assets/img/linkedin.svg"
+            alt="LinkedIn"
+            class="social_icon"
+          />
         </a>
         <a href="https://github.com/camilalimas">
-          <img src="assets/img/github.svg" alt="Github" />
+          <img src="assets/img/github.svg" alt="Github" class="social_icon" />
         </a>
       </section>
-      <h3>👾 Feito por Camila Lima - 2025 👾</h3>
+
+      <h3>Feito por Camila Lima - 2025 👾</h3>
     </footer>
   </body>
 </html>

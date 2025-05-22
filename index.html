@@ -7,11 +7,12 @@
     <meta name="author" content="Generation Brasil" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Meu Perfil</title>
   </head>
   <body>
     <header>
-      <div id="header_content">
+      <div id="header_content" class="flex">
         <div id="titulo">
           <h1>Camila Lima</h1>
         </div>
@@ -20,10 +21,10 @@
           <nav>
             <ul id="menu">
               <li>
-                <a href="index.html"> Home </a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="contato.html"> Contato </a>
+                <a href="contato.html">Contato</a>
               </li>
             </ul>
           </nav>
@@ -32,12 +33,13 @@
     </header>
 
     <main>
-      <section id="about">
+      <section id="about" class="flex_start">
         <h2>Sobre mim</h2>
-        <div id="conteudo">
+        <div id="conteudo" class="flex">
           <img
             src="./assets/img/foto - camila.png"
             alt="Foto da criadora desse conteudo"
+            class="img_profile"
           />
           <article id="sobre_texto">
             <p>
@@ -60,9 +62,9 @@
         </div>
       </section>
 
-      <section id="video">
+      <section id="video" class="flex_start">
         <h2>Um pouco mais sobre mim...</h2>
-        <div id="youtube">
+        <div id="youtube" class="flex">
           <iframe
             width="560"
             height="315"
@@ -77,16 +79,23 @@
       </section>
     </main>
 
-    <footer>
+    <!-- Rodapé da Página (footer) -->
+    <footer class="flex">
+      <!-- Seção de Contato - Redes Sociais-->
       <section id="redes_sociais">
         <a href="https://www.linkedin.com/in/camilalimas/">
-          <img src="assets/img/linkedin.svg" alt="Linkedin" />
+          <img
+            src="assets/img/linkedin.svg"
+            alt="LinkedIn"
+            class="social_icon"
+          />
         </a>
         <a href="https://github.com/camilalimas">
-          <img src="assets/img/github.svg" alt="Github" />
+          <img src="assets/img/github.svg" alt="Github" class="social_icon" />
         </a>
       </section>
-      <h3>👾 Feito por Camila Lima - 2025 👾</h3>
+
+      <h3>Feito por Camila Lima - 2025 👾</h3>
     </footer>
   </body>
 </html>
