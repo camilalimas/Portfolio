@@ -41,15 +41,17 @@
             type="text"
             name="name"
             placeholder="Digite seu nome"
+            onkeyup="validaNome()"
           />
           <span id="txtNome"></span>
 
           <label for="email">E-mail: </label>
           <input
             id="email"
-            type="text"
+            type="email"
             name="email"
             placeholder="Digite seu email"
+            onkeyup="validaEmail()"
           />
           <span id="txtEmail"></span>
 
@@ -110,5 +112,6 @@
 
       <h3>Feito por Camila Lima - 2025 👾</h3>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
